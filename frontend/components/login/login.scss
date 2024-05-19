@@ -1,0 +1,123 @@
+@import '/app/globals.scss';
+
+.login {
+  display: none;
+}
+
+.login_btn {
+  &_auth {
+    padding: 0.5rem 1rem;
+    background-color: $primary-color;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  &_auth:hover {
+    background-color: $secondary-color;
+    color: $primary-color;
+  }
+  &_signup {
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    outline: 1px solid $primary-color;
+    background-color: transparent;
+  }
+  &_signup:hover {
+    padding: 1rem 2rem;
+    outline: 1px solid $primary-color;
+    background-color: $primary-color;
+    color: white;
+  }
+}
+.toggle {
+  display: block;
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: 50% 50%;
+  height: 100vh;
+  .sign_form {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    h1 {
+      font-size: 3rem;
+    }
+    &_social {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    &_input {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      width: 50%;
+      input {
+        width: 100%;
+        text-align: left;
+        padding: 1rem;
+      }
+    }
+  }
+  .toggleform {
+    background-color: $primary-color;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    color: white;
+  }
+  .toggle_right {
+    background: linear-gradient(to right, $primary-color, $secondary-color);
+
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+  }
+  .toggle_left {
+    background: linear-gradient(to left, $primary-color, $secondary-color);
+
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+  }
+}
+.left {
+  white-space: nowrap;
+  animation: RightToLeft 1.5s;
+}
+.right {
+  white-space: nowrap;
+  animation: LeftToRight 1.5s;
+}
+
+.message {
+  color: $red;
+  text-align: center;
+}
+
+@keyframes LeftToRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes RightToLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

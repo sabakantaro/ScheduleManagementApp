@@ -1,0 +1,47 @@
+export const notifications = [
+  {
+    title: "Approve Vacation",
+    linkUrl: "/instructors",
+    type: "vacation",
+    senderName: "Brian",
+    receiverName: "Rodrigo",
+    isRead: false,
+  },
+  {
+    title: "Change Info",
+    linkUrl: "/instructors",
+    type: "course",
+    senderName: "Mariam",
+    receiverName: "Rodrigo",
+    isRead: false,
+    courseName: "SEO",
+  },
+  {
+    title: "Change Info",
+    linkUrl: "/instructors",
+    type: "day",
+    senderName: "Mariam",
+    receiverName: "Rodrigo",
+    isRead: false,
+    dayName: "Monday - Friday",
+  },
+  {
+    title: "Change Info",
+    linkUrl: "/instructors",
+    type: "time",
+    senderName: "Jennifer",
+    receiverName: "Rodrigo",
+    isRead: false,
+    timeName: "Evening",
+  },
+  {
+    title: "Message",
+    description:
+      "Hello, I am your new instructor. I will be absent for the next 3 days. I will be back on Monday. Thank you.",
+    linkUrl: "/instructors",
+    type: "message",
+    senderName: "Brian",
+    receiverName: "Rodrigo",
+    isRead: false,
+  },
+];
